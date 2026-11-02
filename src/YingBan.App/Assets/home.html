@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'"><title>陪肝小助手 · 视频与弹幕同行</title><link rel="stylesheet" href="app.css"></head>
+<body class="home">
+  <main class="home-wrap">
+    <div class="wordmark"><span class="mark" aria-hidden="true">陪</span><strong>陪肝小助手</strong><span class="wordmark-sub">视频与弹幕同行</span></div>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span>你的桌面视频伙伴</div>
+      <h1>视频留在身边，<br><span>弹幕跟着节奏。</span></h1>
+      <p class="lead">打开你的视频，用全局热键跟随播放。把已接收的弹幕投到桌面，让每一句都在合适的时刻出现。</p>
+      <form id="open-form" class="open-form"><label class="sr-only" for="video-url">视频网址或 BV 号</label><input id="video-url" placeholder="粘贴视频网址或 BV 号" maxlength="4096" autocomplete="off" spellcheck="false" required><button type="submit">打开视频 <span aria-hidden="true">↗</span></button></form>
+      <p id="input-error" class="hint" role="status">支持 B 站与常规 HTML5 视频网页。本地视频请点工具栏「本地视频」。</p>
+    </section>
+    <section class="feature-grid" aria-label="使用方式">
+      <article><div class="feature-icon" aria-hidden="true">▶</div><h2>播放随手控制</h2><p>播放、暂停、快进与倍速。游戏期间可用全局热键，不必反复切换窗口。</p></article>
+      <article><div class="feature-icon" aria-hidden="true">≋</div><h2>弹幕同步投影</h2><p>读取当前网页已收到的 B 站弹幕，或导入本地 XML。暂停与跳转时同步跟随。</p></article>
+      <article><div class="feature-icon" aria-hidden="true">▣</div><h2>自己的观看方式</h2><p>设置小窗、置顶与透明度。在设置里选择投影区域、字号和弹幕速度。</p></article>
+    </section>
+    <aside class="recovery"><span class="keycap">Ctrl + Alt + R</span><div><strong>随时找回窗口</strong><p>开启鼠标穿透后，用恢复热键或托盘菜单关闭穿透并找回主窗口。</p></div></aside>
+    <footer><span>本地视频与配置保存在你的电脑</span><span>网页登录与可播放内容由原网站决定</span></footer>
+  </main>
+  <script src="home.js"></script>
+</body></html>

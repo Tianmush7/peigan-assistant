@@ -1,0 +1,24 @@
+**/bin/
+**/obj/
+**/test-profile*/
+**/smoke-profile*/
+**/external-profile/
+**/EBWebView/
+**/User Data/
+**/settings.json
+**/error.log
+dist/
+artifacts/
+.vs/
+.idea/
+*.user
+*.suo
+*.log
+*.dmp
+*.zip
+*.lnk
+*.pfx
+*.p12
+.env
+.env.*
+!.env.example

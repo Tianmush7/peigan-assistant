@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>PeiganAssistant</AssemblyName>
+    <RootNamespace>YingBan.App</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.0.9</Version>
+    <Product>陪肝小助手 · 视频跟跑助手</Product>
+    <Description>置顶视频、全局热键与同步桌面弹幕</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../YingBan.Core/YingBan.Core.csproj" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+    <Content Include="Assets/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="ExcludeUnusedWebViewWpf" BeforeTargets="ResolveAssemblyReferences">
+    <ItemGroup><Reference Remove="@(Reference)" Condition="'%(Reference.Filename)' == 'Microsoft.Web.WebView2.Wpf'" /></ItemGroup>
+  </Target>
+</Project>

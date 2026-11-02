@@ -1,0 +1,8 @@
+* text=auto
+*.cs text eol=lf
+*.csproj text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+# Keep the vendored release byte-for-byte identical to upstream.
+src/YingBan.App/Assets/vendor/btr/bilibili-thread-ripper.user.js -text
+src/YingBan.App/Assets/vendor/btr/LICENSE.md -text
