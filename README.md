@@ -1,5 +1,7 @@
 # 陪肝小助手
 
+<img src="src/YingBan.App/Assets/app-icon.png" width="96" height="96" alt="陪肝小助手派蒙主题同人图标">
+
 Windows 桌面视频跟跑与弹幕投影工具。把攻略视频放在游戏旁边，用快捷键暂停、快进或调整倍速，减少来回切换窗口。
 
 **[下载 Windows 便携版](https://github.com/Tianmush7/peigan-assistant/releases/latest)** · [完整使用说明](docs/usage.md) · [验证记录](docs/verification.md) · [报告问题](https://github.com/Tianmush7/peigan-assistant/issues)
@@ -14,7 +16,7 @@ Windows 桌面视频跟跑与弹幕投影工具。把攻略视频放在游戏旁
 
 ## 快速开始
 
-1. 从 Releases 下载 `PeiganAssistant-v1.0.9-win-x64.zip`，完整解压后运行 `PeiganAssistant.exe`。
+1. 从 Releases 下载 `PeiganAssistant-v1.0.10-win-x64.zip`，完整解压后运行 `PeiganAssistant.exe`。
 2. 如果提示缺少浏览器组件，安装 [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)。便携包已含 .NET 运行时。
 3. 粘贴视频网址或 BV 号，播放后点击「跟跑小窗」。拖动上沿中间移动，拖动左右边、底边或四角调整大小。
 4. 切回游戏，用快捷键控制视频。推荐窗口化或无边框模式。
@@ -80,7 +82,7 @@ dotnet run --project tests/integration/Integration.csproj -c Release -- --accele
 
 ## 许可证与致谢
 
-本项目代码采用 [MIT License](LICENSE)。欢迎反馈问题、修改和分发，请保留版权及许可证声明。
+本项目代码采用 [MIT License](LICENSE)。欢迎反馈问题、修改和分发，请保留版权及许可证声明。派蒙主题图标为非官方同人设计；代码许可证不授予原角色或商标的权利，见[图标说明](docs/icon-design.md)。
 
 - 感谢 [MrTangLuyao / Bilibili-thread-ripper](https://github.com/MrTangLuyao/Bilibili-thread-ripper)。内置上游 `2026.10.8.1`，保留原始脚本及 MIT 许可证。
 - .NET 与 WebView2 等第三方组件遵循各自条款，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

@@ -50,7 +50,10 @@ public sealed class MainForm : Form
     public MainForm(SettingsStore store, string[] args)
     {
         this.store = store; this.args = args; settings = store.Load();
-        Text = "陪肝小助手 · 视频跟跑助手"; Theme.Apply(this); Icon = SystemIcons.Application;
+        Text = "陪肝小助手 · 视频跟跑助手"; Theme.Apply(this);
+        using (var iconStream = typeof(MainForm).Assembly.GetManifestResourceStream("YingBan.App.AppIcon.ico")!)
+        using (var appIcon = new Icon(iconStream))
+            Icon = (Icon)appIcon.Clone();
         MinimumSize = new Size(540, 320); Size = new Size(settings.Width, settings.Height);
         StartPosition = FormStartPosition.Manual;
         var workArea = Screen.PrimaryScreen!.WorkingArea;

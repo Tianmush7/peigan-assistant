@@ -8,7 +8,8 @@
     <AssemblyName>PeiganAssistant</AssemblyName>
     <RootNamespace>YingBan.App</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Version>1.0.9</Version>
+    <ApplicationIcon>Assets/app-icon.ico</ApplicationIcon>
+    <Version>1.0.10</Version>
     <Product>陪肝小助手 · 视频跟跑助手</Product>
     <Description>置顶视频、全局热键与同步桌面弹幕</Description>
   </PropertyGroup>
@@ -16,6 +17,7 @@
     <ProjectReference Include="../YingBan.Core/YingBan.Core.csproj" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
     <Content Include="Assets/**/*" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Assets/app-icon.ico" LogicalName="YingBan.App.AppIcon.ico" />
   </ItemGroup>
   <Target Name="ExcludeUnusedWebViewWpf" BeforeTargets="ResolveAssemblyReferences">
     <ItemGroup><Reference Remove="@(Reference)" Condition="'%(Reference.Filename)' == 'Microsoft.Web.WebView2.Wpf'" /></ItemGroup>

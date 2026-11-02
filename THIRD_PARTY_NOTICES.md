@@ -2,6 +2,8 @@
 
 The MIT license in the repository root covers the project's own code. It does not replace third-party license terms.
 
+The application icon is AI-generated, unofficial Paimon-themed fan art. The code license does not grant rights in the underlying Genshin Impact character or associated trademarks. See `docs/icon-design.md` for the generation prompt and asset provenance.
+
 | Component | Included version | License / notices |
 | --- | --- | --- |
 | Bilibili-thread-ripper | 2026.10.8.1; commit `0302b345cdfe367ac599b52dc6874e3f7967e220` | MIT; `src/YingBan.App/Assets/vendor/btr/LICENSE.md` (portable build: `Assets/vendor/btr/LICENSE.md`) |
